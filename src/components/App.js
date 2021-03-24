@@ -8,6 +8,7 @@ import Home from './Home';
 import Login from './Login';
 import PrivateRoute from './PrivateRoute';
 import ForgotPassword from './ForgotPassword';
+import UpdateProfile from './UpdateProfile';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <AuthProvider>
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <Route exact path="/" component={Home} />
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
