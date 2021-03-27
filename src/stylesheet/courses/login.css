@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+.title {
+    position: relative;
+    margin-top: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    top: 120px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.free {
+    color: greenyellow;
+}
+
+.buttons {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    top: 190px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.button1 {
+    position: relative;
+    left: -8px;
+    font-weight: bold;
+}
+
+.button2 {
+    position: relative;
+    right: -8px;
+    font-weight: bold;
+}
+
+.quote {
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: #b1a6a6;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    top: 280px;
+}
+
+.quote-message {
+    font-size: 20px;
+}
+
+.author {
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    color: gray;
+}

@@ -38,3 +38,8 @@
     from{border-right-color: rgba(0,255,0,.75);}
     to{border-right-color: transparent;}
 }
+
+.courses-categories {
+    position: relative;
+    top: 80px;
+}
