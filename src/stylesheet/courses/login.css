@@ -57,3 +57,30 @@
     font-size: 15px;
     color: gray;
 }
+
+@media only screen and (max-width: 700px) {
+    .title-text {
+        font-size: 25px;
+    }
+    .title-text1 {
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .title-text {
+        font-size: 20px;
+    }
+    .title-text1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .title-text {
+        font-size: 16px;
+    }
+    .title-text1 {
+        font-size: 25px;
+    }
+}

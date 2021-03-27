@@ -10,8 +10,8 @@ export default function Login() {
             <Navbar />
 
             <div className="title">
-                <h1>Create an Account for <span className="free">free</span>.</h1>
-                <h3>Get Access To All the Courses for <span className="free">free</span>.</h3>
+                <h1 className="title-text1 title-text">Create an Account for <span className="free">free</span>.</h1>
+                <h3 className="title-text2 title-text">Get Access To All the Courses for <span className="free">free</span>.</h3>
             </div>
 
             <div className="buttons">
@@ -29,9 +29,6 @@ export default function Login() {
                 <h3 className="quote-message" >way to achieve immortality."</h3>
                 <h4 className="author">Dalai Lama XIV</h4>
             </div>
-
-            
-            
         </>
     )
 }
