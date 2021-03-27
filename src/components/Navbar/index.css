@@ -37,3 +37,10 @@
   position: relative;
   left: 15px;
 }
+
+.button {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  right: 8px;
+}

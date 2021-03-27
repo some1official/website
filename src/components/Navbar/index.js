@@ -26,21 +26,25 @@ const NavigationBar = () => {
         </div>
 
         {currentUser ? 
-        <Link to = "/dashboard" 
-          style={{textDecoration: 'none'}}>
-            <Button variant="primary" 
-              style={{borderRadius:'8px', fontWeight:'bold'}}>
-                Profile
-                  </Button>
-                    </Link>
+        <div className="button">
+          <Link to = "/dashboard" 
+            style={{textDecoration: 'none'}}>
+              <Button variant="primary" 
+                style={{borderRadius:'8px', fontWeight:'bold'}}>
+                  Profile
+                    </Button>
+                      </Link>
+        </div>
          : 
-        <Link to ="/signup" 
-          style={{textDecoration: 'none'}}>
-            <Button variant="primary" 
-              style={{borderRadius:'8px', fontWeight:'bold', display:'flex', justifyContent:'left' }}>
-                Sign Up
-                  </Button>
-                    </Link>
+        <div className="button">
+          <Link to ="/signup" 
+            style={{textDecoration: 'none'}}>
+              <Button variant="primary" 
+                style={{borderRadius:'8px', fontWeight:'bold', display:'flex', justifyContent:'left' }}>
+                  Sign Up
+                    </Button>
+                      </Link>
+        </div>
         }
       </Navbar>
     </>
