@@ -27,6 +27,8 @@
   text-decoration: inherit;
   color: white;
   font-weight: 600;
+  position: relative;
+  right: 7px;
 }
 
 .stories {
@@ -35,7 +37,7 @@
   color: white;
   font-weight: 600;
   position: relative;
-  left: 15px;
+  left: 7px;
 }
 
 .button {
