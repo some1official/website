@@ -1,15 +1,11 @@
 import React from 'react';
-import { useAuth } from '../contexts/AuthContext';
 import NavigationBar from './Navbar/index';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import style from './../stylesheet/Home.css';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Linux from './../assets/icons/linux.png';
 
 export default function Home() {
-    
-    const { currentUser } = useAuth()
 
     return (
         <>

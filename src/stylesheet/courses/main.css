@@ -1,0 +1,131 @@
+
+.popular-courses-title {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.popular-courses {
+    position: relative;
+    top: 120px;
+}
+
+.linux-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.popular-courses-grid1 {
+    position: relative;
+    right: 24px;
+}
+
+.popular-courses-grid3 {
+    position: relative;
+    left: 24px;
+}
+
+.popular-courses-grid2 {
+    position: relative;
+    top: -12px;
+}
+
+.linux-title1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.linux-title2 {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.linux-desc {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    top: 2px;
+    text-align: center;
+}
+
+.linux-button {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    left: 2px;
+}
+
+.linux-tags {
+    word-spacing: 10px;
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    top: 10px;
+    padding: 10px;
+}
+
+.linux-tag1 {
+    color: aqua;
+    position: relative;
+    right: 2px;
+}
+
+.linux-tag1:hover {
+    color:rgb(0, 204, 204);
+}
+
+.linux-tag2 {
+    color: aqua;
+    position: relative;
+    left: 2px;
+}
+
+.linux-tag2:hover {
+    color:rgb(0, 204, 204);
+}
+
+.cpp-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 130px;
+}
+
+.cpp-title1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.cpp-title2 {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.cpp-desc {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
