@@ -10,8 +10,6 @@ import Cpp from './../../assets/icons/cpp.png';
 
 export default function Main() {
 
-    const cppDesc = "Learn the fundamentals of C++,\nFunctional Programming and Object Oriented Programing.\nOnce you have the fundamentals down,\nyou'll apply that knowledge by creating algorithms.";
-
     return (
         <>
             <Navbar />
@@ -45,7 +43,7 @@ export default function Main() {
                             <p> </p>
                             <h2 className="cpp-title1" style={{color: 'white', position:'relative', textAlign:'center'}}>C++ Algorithms</h2>
                             <h3 className="cpp-title2">& Data Structures</h3>
-                            <p className="cpp-desc">{cppDesc}</p>
+                            <p className="cpp-desc">Learn the fundamentals of C++ and create Algorithms/Projects.</p>
 
                             <div className="linux-button">
                                 <Link to="/courses/introduction-to-linux">

@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react'
 import {Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom';
+import { database } from '../firebase';
+import userEvent from '@testing-library/user-event';
+import { auth } from '../firebase'
 
 export default function Signup() {
     const emailRef = useRef()
@@ -15,6 +18,8 @@ export default function Signup() {
     async function handleSubmit(e) {
         e.preventDefault()
 
+        
+
         if (passwordRef.current.value !== passwordConfirmRef.current.value) {
             return setError('Passwords do not match')
         }
@@ -23,6 +28,13 @@ export default function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
+
+            //writes data about the account in the database
+            database.ref('accounts/' + auth.currentUser.uid ).set({
+                email: emailRef.current.value,
+                subscription: "free"
+            })
+
             history.push("/dashboard")
         } catch {
             setError('Failed to create an account')

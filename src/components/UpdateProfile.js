@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import {Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom';
+import { database, auth } from '../firebase';
 
 export default function UpdateProfile() {
     const emailRef = useRef()
@@ -25,6 +26,11 @@ export default function UpdateProfile() {
 
         if (emailRef.current.value !== currentUser.email) {
             promises.push(updateEmail(emailRef.current.value))
+            
+            database.ref('accounts/' + auth.currentUser.uid ).set({
+                email: emailRef.current.value,
+                subscription: "free"
+            })
         }
         if (passwordRef.current.value) {
             promises.push(updatePassword(passwordRef.current.value))

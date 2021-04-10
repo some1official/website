@@ -4,8 +4,15 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import style from './../stylesheet/Home.css';
 import Linux from './../assets/icons/linux.png';
+import { database } from '../firebase';
 
 export default function Home() {
+
+    function write() {
+        return database.ref('accounts/' + 'account1' ).set({
+            subscription: "free" 
+        })
+    }
 
     return (
         <>
@@ -14,6 +21,7 @@ export default function Home() {
             <h2 className="headline-text">Learn Programming</h2>
             <p className="headline-subtext">For Free</p>
 
+            <button onClick={write}>press</button>
 
             <div className="courses-categories" style={{width: '100%', padding: '40px'}} >
                 <Grid container spacing={3}>
