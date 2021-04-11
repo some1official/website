@@ -27,9 +27,8 @@ export default function UpdateProfile() {
         if (emailRef.current.value !== currentUser.email) {
             promises.push(updateEmail(emailRef.current.value))
             
-            database.ref('accounts/' + auth.currentUser.uid ).set({
-                email: emailRef.current.value,
-                subscription: "free"
+            database.ref('accounts/' + auth.currentUser.uid).update({
+                email: emailRef.current.value
             })
         }
         if (passwordRef.current.value) {
