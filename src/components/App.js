@@ -11,6 +11,8 @@ import UpdateProfile from './UpdateProfile';
 import CourseRoute from './Route/CourseRoute';
 import Courses from './courses/Main';
 import CoursesLogin from './courses/Login';
+import PremiumRoute from './Route/PremiumRoute'
+import Pricing from './../pages/Pricing';
 
 function App() {
   return (
@@ -23,8 +25,9 @@ function App() {
 
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-
+              <PremiumRoute path="/big-test" component={Dashboard} />
               <Route exact path="/" component={Home} />
+              <Route exact path="/pricing" component={Pricing} />
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
               <Route path="/forgot-password" component={ForgotPassword} />
