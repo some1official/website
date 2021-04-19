@@ -11,6 +11,9 @@
 # production
 /build
 
+# stripe API keys
+/src/stripe.js
+
 # misc
 .DS_Store
 .env.local

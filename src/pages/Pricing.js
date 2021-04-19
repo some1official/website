@@ -1,9 +1,22 @@
 import React from 'react';
 import './../stylesheet/pages/Pricing.css'
-
-const TITLE = "SOME1 | Pricing"
+import StripeCheckout from 'react-stripe-checkout'
+import {database, auth} from '../firebase'
+import { buyMonthlyPro } from '../components/Stripe/buyMonthlyPro'
+import { testPublishableKey } from '../stripe'
+import Logo from './../assets/images/logo.png'
+import { useAuth } from './../contexts/AuthContext'
+import { Link} from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 export default function Pricing() {
+
+    const { currentUser } = useAuth()
+
+    function HandleToken(token, addresses) {
+
+    }
+
     return (
         <div className="body-pricing">
             <div className="snip1517">
@@ -24,7 +37,31 @@ export default function Pricing() {
                 <li><i className="ion-android-remove"> </i>24/7 Tech Support</li>
                 <li><i className="ion-android-remove"> </i>Daily Backups</li>
                 </ul>
-                <div className="plan-select"><a href="">Select Plan</a></div>
+                <div className="plan-select">
+                    {currentUser ? 
+                        <StripeCheckout 
+                            className="pricing-stripe-button1"
+                            stripeKey={testPublishableKey}
+                            label="SELECT PLAN"
+                            style={{ 
+                                color: 'black',
+                                fontFamily: 'Arial',
+                                fontSize: "67px",
+                                textAlign: 'center',
+                                top: '0px'
+                            }}
+                            amount="500"
+                            name="Pro Monthly Subscription"
+                            image = {Logo}
+                            description = "Subscribe for $5/month"
+                            panelLabel="Pay {{amount}}"
+                            locale="auto"
+                            billingAddress
+                        />
+                        : 
+                        <a href="/signup">sign up</a>
+                    } 
+                </div>
             </div>
             <div className="plan">
                 <header>
@@ -42,13 +79,37 @@ export default function Pricing() {
                 <li><i className="ion-android-remove"> </i>24/7 Tech Support</li>
                 <li><i className="ion-android-remove"> </i>Cancel Anytime</li>
                 </ul>
-                <div className="plan-select"><a href="">Select Plan</a></div>
+                <div className="plan-select">
+                    {currentUser ? 
+                        <StripeCheckout 
+                            className="pricing-stripe-button1"
+                            stripeKey={testPublishableKey}
+                            label="SELECT PLAN"
+                            style={{ 
+                                color: 'black',
+                                fontFamily: 'Arial',
+                                fontSize: "67px",
+                                textAlign: 'center',
+                                top: '0px'
+                            }}
+                            amount="500"
+                            name="Pro Monthly Subscription"
+                            image = {Logo}
+                            description = "Subscribe for $5/month"
+                            panelLabel="Pay {{amount}}"
+                            locale="auto"
+                            billingAddress
+                        />
+                        : 
+                        <a href="/signup">sign up</a>
+                    } 
+                </div>
             </div>
             <div className="plan featured">
                 <header>
                 <h4 className="plan-title">
                     
-                    Yearly Pro
+                    👑 Yearly Pro
                 </h4>
                 <div className="plan-cost"><span className="plan-price">$3</span><span className="plan-type">/month</span></div>
                 </header>
@@ -60,7 +121,31 @@ export default function Pricing() {
                 <li><i className="ion-android-remove"> </i>24/7 Tech Support</li>
                 <li><i className="ion-android-remove"> </i>Daily Backups</li>
                 </ul>
-                <div className="plan-select"><a href="">Select Plan</a></div>
+                <div className="plan-select">
+                    {currentUser ? 
+                        <StripeCheckout 
+                            className="pricing-stripe-button1"
+                            stripeKey={testPublishableKey}
+                            label="SELECT PLAN"
+                            style={{ 
+                                color: 'black',
+                                fontFamily: 'Arial',
+                                fontSize: "67px",
+                                textAlign: 'center',
+                                top: '0px',
+                            }}
+                            amount="500"
+                            name="Pro Monthly Subscription"
+                            image = {Logo}
+                            description = "Subscribe for $5/month"
+                            panelLabel="Pay {{amount}}"
+                            locale="auto"
+                            billingAddress
+                        />
+                        : 
+                        <a href="/signup">sign up</a>
+                    } 
+                </div>
             </div>
             <div className="plan">
                 <header>
@@ -78,9 +163,35 @@ export default function Pricing() {
                 <li><i className="ion-android-remove"> </i>24/7 Tech Support</li>
                 <li><i className="ion-android-remove"> </i>Daily Backups</li>
                 </ul>
-                <div className="plan-select"><a href="">Select Plan</a></div>
+                <div className="plan-select">
+                    {currentUser ? 
+                        <StripeCheckout 
+                            className="pricing-stripe-button1"
+                            stripeKey={testPublishableKey}
+                            label="SELECT PLAN"
+                            style={{ 
+                                color: 'black',
+                                fontFamily: 'Arial',
+                                fontSize: "67px",
+                                textAlign: 'center',
+                                top: '0px'
+                            }}
+                            amount="500"
+                            name="Pro Monthly Subscription"
+                            image = {Logo}
+                            description = "Subscribe for $5/month"
+                            panelLabel="Pay {{amount}}"
+                            locale="auto"
+                            billingAddress
+                        />
+                        : 
+                        <a href="/signup">sign up</a>
+                    } 
+                </div>
             </div>
-            </div>
+
+            </div>  
+
         </div>
     )
 }

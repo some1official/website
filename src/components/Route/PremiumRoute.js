@@ -3,6 +3,7 @@ import { Route, Redirect } from "react-router-dom"
 import { useAuth } from "./../../contexts/AuthContext"
 import { database, auth } from "./../../firebase"
 
+
 export default function CourseRoute({ component: Component, ...rest }) {
 
   function PremiumSubscription() {
@@ -17,7 +18,7 @@ export default function CourseRoute({ component: Component, ...rest }) {
             console.log('true');
             return returns = false;
           }
-          else {
+          else if(snap.val()=="pro") {
             console.log('false');
             return returns = true;
           }

@@ -144,8 +144,8 @@
   margin-top: -10px;
   z-index: 1;
   border-radius: 8px;
-  border: 2px solid #156dab;
-  background-color: #156dab;
+  border: 2px solid goldenrod;
+  background-color: #222f3d;
 }
 
 .snip1517 .featured .plan-select {
@@ -187,4 +187,11 @@
     margin: 0.5% 0;
     width: 100%;
   }
+}
+
+.pricing-stripe-button1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20px;
 }
