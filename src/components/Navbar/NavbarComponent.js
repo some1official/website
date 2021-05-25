@@ -7,7 +7,7 @@ export default function NavbarComponent() {
             <ul className="NavbarComponent-ul">
                 <li className="NavbarComponent-li">
                     <a 
-                        href=""
+                        href="/"
                         className="NavbarComponent-a"    
                     >
                         SOME1
@@ -15,7 +15,7 @@ export default function NavbarComponent() {
                 </li>   
                 <li className="NavbarComponent-li">
                     <a 
-                        href=""
+                        href="/"
                         className="NavbarComponent-a"    
                     >
                         SOME1
@@ -23,7 +23,7 @@ export default function NavbarComponent() {
                 </li>
                 <li className="NavbarComponent-li">
                     <a 
-                        href=""
+                        href="/"
                         className="NavbarComponent-a"    
                     >
                         SOME1
@@ -31,7 +31,7 @@ export default function NavbarComponent() {
                 </li>
                 <li className="NavbarComponent-li">
                     <a 
-                        href=""
+                        href="/"
                         className="NavbarComponent-a"    
                     >
                         SOME1

@@ -14,7 +14,7 @@ export default function PythonCard() {
                     src={PythonLogo} 
                     height={125}
                     className="logo-PythonCard" 
-                
+                    alt="Logo Python"
                 />
                 
                 <h4 className="title-PythonCard">

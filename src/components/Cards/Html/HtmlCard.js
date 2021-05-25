@@ -14,6 +14,7 @@ export default function HtmlCard() {
                     src={HtmlLogo} 
                     height={125}
                     className="logo-HtmlCard" 
+                    alt="Logo HTML"
                 />
                 
                 <h4 className="title-HtmlCard">

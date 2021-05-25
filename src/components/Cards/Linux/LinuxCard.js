@@ -14,7 +14,7 @@ export default function LinuxCard() {
                     src={LinuxLogo} 
                     height={125}
                     className="logo-LinuxCard" 
-                
+                    alt="Logo Linux"
                 />
                 
                 <h4 className="title-LinuxCard">
