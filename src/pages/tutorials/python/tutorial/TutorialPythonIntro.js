@@ -4,7 +4,6 @@ import './../../../../style/pages/tutorials/python/base.css'
 export default function tutorialPython() {
     return (
         <>
-        
             <div className="content-tutorialPython">
               <h1 className="title-content-tutorialPython">Python Introduction</h1>
               <hr className="hr-content-tutorialPython"/>
