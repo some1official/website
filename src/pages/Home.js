@@ -17,6 +17,8 @@ export default function Home() {
                 <div className="featured-tutorials-grid-card"> <HtmlCard/> </div>
                 <div className="featured-tutorials-grid-card"> <LinuxCard/> </div>
             </section>
+
+            
         </>
     )
 }

@@ -7,7 +7,7 @@ export default function NavbarComponent() {
             <ul className="NavbarComponent-ul">
                 <li className="NavbarComponent-li">
                     <a 
-                        href="/"
+                        href="/template"
                         className="NavbarComponent-a"    
                     >
                         SOME1

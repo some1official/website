@@ -1,0 +1,65 @@
+.tag {
+  text-decoration: none;
+  color: #6489c8;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.tag:hover {
+  color: #3262af;
+}
+
+.title-title-TemplatePost {
+  color: white;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.author-title-TemplatePost {
+  color: white;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: lighter;
+  position: relative;
+  top: -15px;
+}
+
+.link-author-title-TemplatePost {
+  text-decoration: underline !important;
+  color: #6489c8;
+}
+
+.link-author-title-TemplatePost:hover {
+  text-decoration: none !important;
+  color: #2b61bc;
+}
+
+.title-tags-TemplatePost {
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 12px;
+}
+
+.content-TemplatePost {
+  color: white;
+  margin-right: 120px;
+  margin-left: 120px;
+
+}
+
+.title-section-1-content-TemplatePost {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: lighter;
+}
+
+.title-section-2-content-TemplatePost {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: lighter;
+}
+
+.text-section-2-content-TemplatePost {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
+}
