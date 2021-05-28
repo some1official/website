@@ -15,7 +15,7 @@ export default function tutorialPython() {
               and released in 1991.
               </p>
 
-              <br/><br/>
+              <br/>
 
               <h1 className="big-title-content-tutorialPython">What can Python do?</h1>
 
