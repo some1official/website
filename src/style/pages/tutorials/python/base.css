@@ -1,0 +1,23 @@
+.content-tutorialPython {
+  color: white;
+  margin-right:16.66666667%;
+  margin-left:16.66666667%;
+}
+
+.title-content-tutorialPython {
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.big-title-content-tutorialPython {
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 25px;
+}
+
+.text-content-tutorialPython {
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: lighter;
+}
