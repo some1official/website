@@ -17,6 +17,12 @@
   font-size: 25px;
 }
 
+.small-title-content-tutorialPython {
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+}
+
 .text-content-tutorialPython {
   font-family: "Segoe UI",Arial,sans-serif;
   font-weight: lighter;
