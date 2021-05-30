@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import { useMediaQuery } from 'react-responsive';
+import windowSize from 'react-window-size';
 
 function PythonTutorialNavbar() {
   const [sidebar, setSidebar] = useState(true);
@@ -12,7 +14,9 @@ function PythonTutorialNavbar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
+    
     <div>
+      <checkIfMobile />
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>

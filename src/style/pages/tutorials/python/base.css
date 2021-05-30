@@ -9,7 +9,7 @@
 .content-tutorialPython {
   color: white;
   margin-right:10%;
-  margin-left:220px;
+  margin-left:10%;
 }
 
 .title-content-tutorialPython {
@@ -38,5 +38,13 @@
 
 .page-tutorialPython {
   display: flex;
+  margin-top: 3%;
+}
 
+.back-buttons-tutorialPython {
+  background-color: rgb(231, 64, 64);
+}
+
+.next-buttons-tutorialPython {
+  background-color: rgb(10, 190, 10);
 }

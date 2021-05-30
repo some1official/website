@@ -1,86 +1,47 @@
 
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
 
 export const SidebarData = [
   {
-    title: 'Home',
-    path: '/',
-    icon: <AiIcons.AiFillHome />,
+    title: 'Introduction',
+    path: '/tutorials/python/intro',
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Reports',
     path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Products',
     path: '/products',
-    icon: <FaIcons.FaCartPlus />,
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Team',
     path: '/team',
-    icon: <IoIcons.IoMdPeople />,
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Messages',
     path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Support',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: "",
     cName: 'nav-text'
   },
   {
     title: 'Support',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: "",
     cName: 'nav-text'
   }
 ];
