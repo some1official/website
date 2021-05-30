@@ -9,38 +9,14 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
-    path: '/reports',
+    title: 'Hello World',
+    path: '/tutorials/python/hello-world',
     icon: "",
     cName: 'nav-text'
   },
   {
-    title: 'Products',
-    path: '/products',
-    icon: "",
-    cName: 'nav-text'
-  },
-  {
-    title: 'Team',
-    path: '/team',
-    icon: "",
-    cName: 'nav-text'
-  },
-  {
-    title: 'Messages',
-    path: '/messages',
-    icon: "",
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: "",
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
+    title: 'Variables',
+    path: '/tutorials/python/variables',
     icon: "",
     cName: 'nav-text'
   }

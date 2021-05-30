@@ -1,11 +1,25 @@
 import React from 'react'
 import './../../../../style/pages/tutorials/python/base.css'
+import PythonTutorialNavbar from './../../../../components/Navbar/PythonTutorial/PythonTutorialNavbar'
 
 export default function tutorialPython() {
     return (
         <>
+            <div className="page-tutorialPython">
+
+            <PythonTutorialNavbar />
+
             <div className="content-tutorialPython">
               <h1 className="title-content-tutorialPython">Python Introduction</h1>
+              <div className="buttons-tutorialPython">
+                <button className="back-buttons-tutorialPython">
+                    <a href="/" style={{textDecoration: "inherit"}}>Back</a>
+                </button>
+                {' '}
+                <button className="next-buttons-tutorialPython">
+                    <a href="/" style={{textDecoration: "inherit"}}>Next</a>
+                </button>
+              </div>
               <hr className="hr-content-tutorialPython"/>
 
               <h1 className="big-title-content-tutorialPython">What is Python?</h1>
@@ -33,6 +47,7 @@ export default function tutorialPython() {
                   <p className="text-content-tutorialPython">for rapid prototyping, or for production-ready software development.</p>
                 </li>
               </ul>
+            </div>
             </div>
         </>
     )
