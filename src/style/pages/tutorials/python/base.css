@@ -1,7 +1,15 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+.w3-sidebar {
+  background-color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: lighter;
+}
+
 .content-tutorialPython {
   color: white;
-  margin-right:16.66666667%;
-  margin-left:16.66666667%;
+  margin-right:10%;
+  margin-left:220px;
 }
 
 .title-content-tutorialPython {
@@ -26,4 +34,9 @@
 .text-content-tutorialPython {
   font-family: "Segoe UI",Arial,sans-serif;
   font-weight: lighter;
+}
+
+.page-tutorialPython {
+  display: flex;
+
 }
