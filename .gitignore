@@ -9,10 +9,10 @@
 /coverage
 
 # production
-/src/build
+/build
 
 # configs
-/configs
+/src/configs
 
 # misc
 .DS_Store
