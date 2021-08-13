@@ -1,6 +1,7 @@
 import React from 'react'
 import './../../style/components/Navbar/NavbarComponent.css'
 import PrivateRoute from './../../auth/PrivateRoute'
+import { CgProfile } from 'react-icons/cg'
 
 export default function NavbarComponent() {
     return (
@@ -52,9 +53,8 @@ export default function NavbarComponent() {
                             href="/dashboard"
                             className="NavbarComponent-a"    
                             >
-                            Dashboard
+                            Dashboard <CgProfile/>
                             </a>
-                        
                         </button>
                         :   
                         <button

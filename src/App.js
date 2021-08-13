@@ -19,10 +19,10 @@ function App() {
         <Route exact path="/" component={Home} />
 
         {/*Dashboard*/}
-        <Route path="/dashboard"> {PrivateRoute ? <Dashboard/> : <Redirect to="/login"/> } </Route>
+        <Route path="/dashboard"> {PrivateRoute ? <Dashboard/> : <Redirect to="/login"/>  } </Route>
 
         {/* Python Tutorial */}
-        <Route path="/login" component={loginPage} />
+        <Route path="/login"> {PrivateRoute ? <Redirect to="/dashboard" /> : <loginPage/> } </Route>
         <Route path="/tutorials/python/intro"> {PrivateRoute ? <Redirect to="/" /> : <Redirect to="/login" />} </Route>
         <Route path="/tutorials/python/hello-world" component={PythonHelloWorld} />
         <Route path="/tutorials/python/variables" component={PythonVariables} />
