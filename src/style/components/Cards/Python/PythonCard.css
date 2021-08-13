@@ -1,17 +1,19 @@
 .card-contents-PythonCard {
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-PythonCard {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    top: -40px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .logo-PythonCard {
-    margin-top: 65px;
-    margin-bottom: 0px;
+   
 }
 
 .description-PythonCard {
@@ -23,6 +25,7 @@
     margin-right: 15px;
     position: relative;
     top: -80px;
+    margin-top: 80px;
 }
 
 .button-PythonCard {

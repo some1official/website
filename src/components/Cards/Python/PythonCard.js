@@ -9,13 +9,20 @@ export default function PythonCard() {
     return (
         <div className="card-PythonCard">
             <div className="card-contents-PythonCard">
-                
-                <img 
-                    src={PythonLogo} 
-                    height={125}
-                    className="logo-PythonCard" 
-                    alt="Logo Python"
-                />
+                <div
+                    style={{
+                        display:"flex",
+                        justifyContent:"center"
+                    }}
+                >
+                    <img 
+                        src={PythonLogo} 
+                        height={125}
+                        width={125}
+                        className="logo-PythonCard" 
+                        alt="Logo Python"
+                    />
+                </div>
                 
                 <h4 className="title-PythonCard">
                     Python 3
@@ -26,7 +33,7 @@ export default function PythonCard() {
                 </p>
 
                 <a 
-                    href="/"
+                    href="/tutorials/python/intro"
                     className="button-PythonCard"
                 >
                     <div className="button-text-PythonCard">
