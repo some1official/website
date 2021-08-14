@@ -9,8 +9,8 @@
 
 .featured-tutorials-grid {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 20px;
     justify-content: center;
     text-align: center;

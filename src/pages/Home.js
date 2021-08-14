@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import NavbarComponent from './../components/Navbar/NavbarComponent'
 import './../style/pages/Home.css'
+import WebFundamentalsCard from './../components/Cards/Learning Paths/WebFundamentals/WebFundamentalsCard'
+
 
 //cards for featured tutorials grid
 import PythonCard from './../components/Cards/Python/PythonCard'
 import HtmlCard from './../components/Cards/Html/HtmlCard'
 import LinuxCard from './../components/Cards/Linux/LinuxCard'
+import LinuxAdminCard from './../components/Cards/Learning Paths/LinuxAdmin/LinuxAdminCard'
+import PythonSoftwareEngineer from './../components/Cards/Learning Paths/PythonSoftwareEngineer/PythonSoftwareEngineer'
 
 import Image1 from './../assets/image.gif'
 
@@ -34,7 +38,9 @@ export default function Home() {
                 style={{
                     color: "white",
                     display: "flex",
-                    justifyContent: "center"
+                    justifyContent: "center",
+                    marginRight: "25%",
+                    marginLeft: "25%"
                 }}
             >   
                 <div
@@ -42,7 +48,9 @@ export default function Home() {
                         display: "flex",
                         flexDirection: "column",
                         position: "relative",
-                        top: "150px"
+                        top: "150px",
+                        marginRight: "0%",
+                        marginLeft: "0%"
                     }}
                 >
                 <h2
@@ -70,7 +78,7 @@ export default function Home() {
                             'Hack',
                             1250,
                             'Think.',
-                            30000
+                            3000
                         ]}
                     />
                 </h1>
@@ -141,10 +149,39 @@ export default function Home() {
                 </div>
                 <img 
                     src={Image1}
-                    style={{marginLeft: "5%"}}
+                    height="400px"
+                    style={{marginLeft: "10%",marginRight: "5%", position: "relative",top: "60px"}}
                 />
             </div>
+            
+            {/*Section 1*/}
 
+            <div
+                style={{
+                    textAlign: "center",
+                    color: "white",
+                    marginRight: "25%",
+                    marginLeft: "25%",
+                    position: "relative",
+                    top: "100px"
+                }}
+            >
+                <h1
+                    style={{
+                        fontFamily: "Source Code Pro, monospace"
+                    }}
+                >Learning Paths</h1>
+                <p style={{color: "rgb(187, 187, 187)", fontStyle: "italic", marginBottom: "1%"}}>
+                    Learn by following structured paths
+                </p>
+
+                <div className="featured-tutorials-grid">
+                    <div className="featured-tutorials-grid-card"><WebFundamentalsCard /></div>
+                    <div className="featured-tutorials-grid-card"><LinuxAdminCard /></div>
+                    <div className="featured-tutorials-grid-card"><PythonSoftwareEngineer /></div>
+                </div>
+
+            </div>
 
             <br />
             <br />
@@ -161,6 +198,8 @@ export default function Home() {
             <br />
             <br />
             <br />
+
+            
 
             <section className="featured-tutorials-grid">
                 <div className="featured-tutorials-grid-card"> <PythonCard/> </div>
