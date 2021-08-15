@@ -11,6 +11,7 @@ import loginPage from './auth/loginPage'
 import PythonIntro from './pages/tutorials/python/tutorial/PythonIntro'
 import PythonHelloWorld from './pages/tutorials/python/tutorial/PythonHelloWorld'
 import PythonVariables from './pages/tutorials/python/tutorial/PythonVariables'
+import PythonSoftwareEngineer from './pages/learning paths/PythonSoftwareEngineer/PythonSoftwareEngineer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dashboard"> {PrivateRoute ? <Dashboard/> : <Redirect to="/login"/>  } </Route>
 
         {/* Python Tutorial */}
+        <Route path="/learning-path/python-software-engineer" component={PythonSoftwareEngineer} />
         <Route path="/login"> {PrivateRoute ? <Redirect to="/dashboard" /> : <loginPage/> } </Route>
         <Route path="/tutorials/python/intro"> {PrivateRoute ? <Redirect to="/" /> : <Redirect to="/login" />} </Route>
         <Route path="/tutorials/python/hello-world" component={PythonHelloWorld} />

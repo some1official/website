@@ -2,13 +2,10 @@ import React from 'react'
 import './../../../../style/pages/tutorials/python/base.css'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import PythonTutorialNavbar from './../../../../components/Navbar/PythonTutorial/PythonTutorialNavbar'
 
 export default function PythonHelloWorld() {
     return (
         <div className="page-tutorialPython">
-
-        <PythonTutorialNavbar />
 
         <div className="content-tutorialPython">
               <h1 className="title-content-tutorialPython">Python Variables</h1>

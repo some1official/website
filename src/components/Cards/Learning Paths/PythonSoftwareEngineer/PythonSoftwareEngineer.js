@@ -50,7 +50,7 @@ export default function WebFundamentalsCard() {
                         position: "relative",
                         top: "-50px"
                     }}
-                    href="/tutorials/python/intro"
+                    href="/learning-path/python-software-engineer"
                     className="button-PythonCard"
                 >
                     <div className="button-text-PythonCard">

@@ -156,6 +156,10 @@ export default function Home() {
             
             {/*Section 1*/}
 
+            <br />
+            <br />
+            <br />
+
             <div
                 style={{
                     textAlign: "center",
@@ -166,14 +170,20 @@ export default function Home() {
                     top: "100px"
                 }}
             >
+                
+                
                 <h1
                     style={{
                         fontFamily: "Source Code Pro, monospace"
                     }}
                 >Learning Paths</h1>
+                
+                
                 <p style={{color: "rgb(187, 187, 187)", fontStyle: "italic", marginBottom: "1%"}}>
                     Learn by following structured paths
                 </p>
+
+                <br />
 
                 <div className="featured-tutorials-grid">
                     <div className="featured-tutorials-grid-card"><WebFundamentalsCard /></div>
@@ -208,6 +218,10 @@ export default function Home() {
             </section>
 
             
+            
+            <iframe src="https://trinket.io/embed/python/4082b7a6a6?runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
         </>
     )
 }

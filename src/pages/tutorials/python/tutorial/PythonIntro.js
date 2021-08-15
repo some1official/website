@@ -1,13 +1,12 @@
 import React from 'react'
 import './../../../../style/pages/tutorials/python/base.css'
-import PythonTutorialNavbar from './../../../../components/Navbar/PythonTutorial/PythonTutorialNavbar'
 
 export default function tutorialPython() {
     return (
         <>
             <div className="page-tutorialPython">
 
-            <PythonTutorialNavbar />
+           
 
             <div className="content-tutorialPython">
               <h1 className="title-content-tutorialPython">Python Introduction</h1>

@@ -1,4 +1,4 @@
-import firebase from './../configs/firebaseConfig'
+import firebase from '../configs/firebaseConfig'
 
 const checkAuth = () => {
     if(firebase.auth().currentUser) {
