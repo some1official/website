@@ -13,6 +13,8 @@ import PythonHelloWorld from './pages/tutorials/python/tutorial/PythonHelloWorld
 import PythonVariables from './pages/tutorials/python/tutorial/PythonVariables'
 import PythonSoftwareEngineer from './pages/learning paths/PythonSoftwareEngineer/PythonSoftwareEngineer'
 
+import Timnik from './profiles/timnik/Timnik'
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +30,9 @@ function App() {
         <Route path="/tutorials/python/intro"> {PrivateRoute ? <Redirect to="/" /> : <Redirect to="/login" />} </Route>
         <Route path="/tutorials/python/hello-world" component={PythonHelloWorld} />
         <Route path="/tutorials/python/variables" component={PythonVariables} />
+      
+        {/* Profile Pages */}
+        <Route path="/p/timnik" component={Timnik} />
       </Switch>
     </BrowserRouter>
   );

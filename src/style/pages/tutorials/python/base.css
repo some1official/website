@@ -17,6 +17,7 @@
   font-family: "Ubuntu Mono", monospace;
   font-weight: lighter;
   font-size: 35px;
+  margin-bottom: 0px;
 }
 
 .big-title-content-tutorialPython {
@@ -75,4 +76,18 @@
 
 .menu-buttons-tutorialPython:hover {
   background-color:rgb(34, 151, 140);
+}
+
+.author-tutorialPython {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.a-author-tutorialPython {
+  color: aqua; 
+}
+
+.a-author-tutorialPython:hover {
+  color: rgb(0, 182, 182); 
 }

@@ -11,6 +11,7 @@ export default function PythonHelloWorld() {
         
         <div className="content-tutorialPython">
               <h1 className="title-content-tutorialPython">Python Hello World</h1>
+              <p className="author-tutorialPython">Written by {'[ '}<a className="a-author-tutorialPython"href="/p/timnik">Timnik</a>{' ]'}</p>
               <div className="buttons-tutorialPython">
                 <button className="back-buttons-tutorialPython">
                     <a href="/" style={{textDecoration: "inherit"}}><FaArrowLeft style={{position: "relative",top: "2px"}}/> Back</a>
