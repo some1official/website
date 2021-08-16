@@ -4,28 +4,35 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { CgMenuBoxed } from 'react-icons/cg'
+import NavbarComponent from '../../../../components/Navbar/NavbarComponent';
 
 export default function PythonHelloWorld() {
     return (
+        <>
+        <NavbarComponent />
         <div className="page-tutorialPython">
         
         <div className="content-tutorialPython">
-              <h1 className="title-content-tutorialPython">Python Hello World</h1>
+              <h1 className="title-content-tutorialPython">
+                Python Hello World
+              </h1>
               <p className="author-tutorialPython">Written by {'[ '}<a className="a-author-tutorialPython"href="/p/timnik">Timnik</a>{' ]'}</p>
               <div className="buttons-tutorialPython">
                 <button className="back-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}><FaArrowLeft style={{position: "relative",top: "2px"}}/> Back</a>
+                    <a href="/course/python/intro" style={{textDecoration: "inherit"}}><FaArrowLeft style={{position: "relative",top: "2px"}}/> Back</a>
                 </button>
                 {' '}
                 <button className="next-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
+                    <a href="/course/python/comments" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
                 </button>
                 {' '}
                 <button className="menu-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Menu <CgMenuBoxed style={{position: "relative",top: "2px"}}/></a>
+                    <a href="/learning-path/python-software-engineer" style={{textDecoration: "inherit"}}>Menu <CgMenuBoxed style={{position: "relative",top: "2px"}}/></a>
                 </button>
               </div>
+
               <hr className="hr-content-tutorialPython"/>
+
 
               <p className="text-content-tutorialPython">
               A "Hello, World!" program is computer program that outputs or displays the message "Hello, World!".
@@ -57,7 +64,16 @@ export default function PythonHelloWorld() {
               By running the program we will get the following message displayed on the console:
               <SyntaxHighlighter language="python" style={dark}>Hello, World!</SyntaxHighlighter> 
               </p>
-            </div>
-            </div>
+        
+            <br />
+            <h1 className="big-title-content-tutorialPython">Try it Yourself:</h1>
+
+            <iframe src="https://trinket.io/embed/python/b995bda901?runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+            <br />
+            <br />
+        </div>
+        </div>
+        </>
     )
 }

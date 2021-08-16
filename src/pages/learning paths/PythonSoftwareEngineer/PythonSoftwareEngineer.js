@@ -237,9 +237,9 @@ export default function PythonSoftwareEngineer() {
                         listStyleType: "none",
                     }}
                 >
-                    <li>00 - <a className="a-PythonSoftwareEngineer" href="/tutorials/python/hello-world"> What is Python?</a> {"(Introduction)"}</li>
-                    <li>01 - <a className="a-PythonSoftwareEngineer" href="/tutorials/python/hello-world"> Hello, World</a></li>
-                    <li>02 - <a className="a-PythonSoftwareEngineer" href="/tutorials/python/variables"> Variables</a></li>
+                    <li>00 - <a className="a-PythonSoftwareEngineer" href="/course/python/intro"> What is Python?</a> {"(Introduction)"}</li>
+                    <li>01 - <a className="a-PythonSoftwareEngineer" href="/course/python/hello-world"> Hello, World</a></li>
+                    <li>02 - <a className="a-PythonSoftwareEngineer" href="/course/python/variables"> Variables</a></li>
                 </ul>
 
                 <div>

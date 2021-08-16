@@ -8,10 +8,10 @@ import Dashboard from './pages/Dashboard'
 import loginPage from './auth/loginPage'
 
 //PythonTutorials
-import PythonIntro from './pages/tutorials/python/tutorial/PythonIntro'
-import PythonHelloWorld from './pages/tutorials/python/tutorial/PythonHelloWorld'
-import PythonVariables from './pages/tutorials/python/tutorial/PythonVariables'
+
 import PythonSoftwareEngineer from './pages/learning paths/PythonSoftwareEngineer/PythonSoftwareEngineer'
+
+import PythonCourseRoute from './routes/PythonCourseRoute'
 
 import Timnik from './profiles/timnik/Timnik'
 
@@ -27,9 +27,8 @@ function App() {
         {/* Python Tutorial */}
         <Route path="/learning-path/python-software-engineer" component={PythonSoftwareEngineer} />
         <Route path="/login"> {PrivateRoute ? <Redirect to="/dashboard" /> : <loginPage/> } </Route>
-        <Route path="/tutorials/python/intro"> {PrivateRoute ? <Redirect to="/" /> : <Redirect to="/login" />} </Route>
-        <Route path="/tutorials/python/hello-world" component={PythonHelloWorld} />
-        <Route path="/tutorials/python/variables" component={PythonVariables} />
+        
+        <PythonCourseRoute />
       
         {/* Profile Pages */}
         <Route path="/p/timnik" component={Timnik} />

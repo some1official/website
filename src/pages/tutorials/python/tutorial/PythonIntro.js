@@ -1,53 +1,61 @@
 import React from 'react'
 import './../../../../style/pages/tutorials/python/base.css'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import { CgMenuBoxed } from 'react-icons/cg'
+import NavbarComponent from '../../../../components/Navbar/NavbarComponent';
 
-export default function tutorialPython() {
+export default function PythonHelloWorld() {
     return (
-        <>
-            <div className="page-tutorialPython">
-
-           
-
-            <div className="content-tutorialPython">
-              <h1 className="title-content-tutorialPython">Python Introduction</h1>
+      <>
+        <NavbarComponent />
+        <div className="page-tutorialPython">
+        
+        <div className="content-tutorialPython">
+              <h1 className="title-content-tutorialPython">
+                What is Python? {'(Introduction)'}
+              </h1>
+              <p className="author-tutorialPython">Written by {'[ '}<a className="a-author-tutorialPython"href="/p/timnik">Timnik</a>{' ]'}</p>
               <div className="buttons-tutorialPython">
-                <button className="back-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Back</a>
+                <button className="next-buttons-tutorialPython">
+                    <a href="/course/python/hello-world" style={{textDecoration: "inherit"}}>Start <FaArrowRight style={{position: "relative",top: "2px"}} /></a>
                 </button>
                 {' '}
-                <button className="next-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Next</a>
+                <button className="menu-buttons-tutorialPython">
+                    <a href="/learning-path/python-software-engineer" style={{textDecoration: "inherit"}}>Menu <CgMenuBoxed style={{position: "relative",top: "2px"}}/></a>
                 </button>
               </div>
               <hr className="hr-content-tutorialPython"/>
 
-              <h1 className="big-title-content-tutorialPython">What is Python?</h1>
               <p className="text-content-tutorialPython">
-              Python is a very popular high-level programming language, because of the easy to understand syntax
-              is considered one of the easiest programming languages to learn. It was created by by Guido van Rossum, 
-              and released in 1991.
+              Python is an interpreted high-level general-purpose programming language. 
+              It was created by Guido van Rossum, and released in 1991. 
+              < br/>
+              < br/>
+              It is considered a great programming language for beginners to start with because 
+              it has simple syntax and it is high-level. And it is also a good language to have in any
+              programmer's stack as it can be used for everything from web development to software development
+              and scientific applications.
               </p>
 
-              <br/>
+              <br />
 
-              <h1 className="big-title-content-tutorialPython">What can Python do?</h1>
-
-              <ul>
-                <li className="li-content-tutorialPython">
-                  <p className="text-content-tutorialPython">can we be used to create web applications</p>
-                </li>
-                <li className="li-content-tutorialPython">
-                  <p className="text-content-tutorialPython">can be used to automate stuff</p>
-                </li>
-                <li className="li-content-tutorialPython">
-                  <p className="text-content-tutorialPython">can be used alongside software to create workflows.</p>
-                </li>
-                <li className="li-content-tutorialPython">
-                  <p className="text-content-tutorialPython">for rapid prototyping, or for production-ready software development.</p>
-                </li>
-              </ul>
+              <h1 className="big-title-content-tutorialPython">Good to Know:</h1>
+              
+              <li className="li-content-tutorialPython">
+                  <p className="text-content-tutorialPython">
+                    In this course you will learn Python 3, not Python 2.
+                  </p>
+              </li>
+                
+              <li className="li-content-tutorialPython">
+                  <p className="text-content-tutorialPython">
+                    We will be usind an IDE {'(Integrated Development Environment)'} in this course, you can use our own IDE in your browser or install one yourself.
+                  </p>
+              </li>
             </div>
             </div>
-        </>
+      </>
     )
 }

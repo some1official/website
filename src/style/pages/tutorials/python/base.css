@@ -35,6 +35,9 @@
 .text-content-tutorialPython {
   font-family: "Segoe UI",Arial,sans-serif;
   font-weight: lighter;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .page-tutorialPython {
@@ -91,3 +94,10 @@
 .a-author-tutorialPython:hover {
   color: rgb(0, 182, 182); 
 }
+
+.li-content-tutorialPython {
+  margin-left: 1%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
