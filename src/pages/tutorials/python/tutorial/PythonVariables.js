@@ -2,20 +2,29 @@ import React from 'react'
 import './../../../../style/pages/tutorials/python/base.css'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { CgMenuBoxed } from 'react-icons/cg';
 
 export default function PythonHelloWorld() {
     return (
         <div className="page-tutorialPython">
 
         <div className="content-tutorialPython">
-              <h1 className="title-content-tutorialPython">Python Variables</h1>
+        <h1 className="title-content-tutorialPython">
+                Python Variables
+              </h1>
+              <p className="author-tutorialPython">Written by {'[ '}<a className="a-author-tutorialPython"href="/p/timnik">Timnik</a>{' ]'}</p>
               <div className="buttons-tutorialPython">
                 <button className="back-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Back</a>
+                    <a href="/course/python/comments" style={{textDecoration: "inherit"}}><FaArrowLeft style={{position: "relative",top: "2px"}}/> Back</a>
                 </button>
                 {' '}
                 <button className="next-buttons-tutorialPython">
-                    <a href="/" style={{textDecoration: "inherit"}}>Next</a>
+                    <a href="/course/python/strings" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
+                </button>
+                {' '}
+                <button className="menu-buttons-tutorialPython">
+                    <a href="/learning-path/python-software-engineer" style={{textDecoration: "inherit"}}>Menu <CgMenuBoxed style={{position: "relative",top: "2px"}}/></a>
                 </button>
               </div>
               <hr className="hr-content-tutorialPython"/>

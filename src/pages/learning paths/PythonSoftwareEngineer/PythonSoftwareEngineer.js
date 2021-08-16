@@ -239,7 +239,9 @@ export default function PythonSoftwareEngineer() {
                 >
                     <li>00 - <a className="a-PythonSoftwareEngineer" href="/course/python/intro"> What is Python?</a> {"(Introduction)"}</li>
                     <li>01 - <a className="a-PythonSoftwareEngineer" href="/course/python/hello-world"> Hello, World</a></li>
-                    <li>02 - <a className="a-PythonSoftwareEngineer" href="/course/python/variables"> Variables</a></li>
+                    <li>02 - <a className="a-PythonSoftwareEngineer" href="/course/python/comments"> Comments</a></li>
+                    <li>03 - <a className="a-PythonSoftwareEngineer" href="/course/python/variables"> Variables</a></li>
+                    <li>04 - <a className="a-PythonSoftwareEngineer" href="/course/python/strings"> Strings</a></li>
                 </ul>
 
                 <div>
