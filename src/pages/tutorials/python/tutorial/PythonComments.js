@@ -7,7 +7,7 @@ import { CgMenuBoxed } from 'react-icons/cg'
 import NavbarComponent from '../../../../components/Navbar/NavbarComponent';
 
 
-export default function PythonHelloWorld() {
+export default function PythonComments() {
     return (
         <>
         <NavbarComponent />

@@ -6,6 +6,7 @@ import PythonHelloWorld from '../pages/tutorials/python/tutorial/PythonHelloWorl
 import PythonVariables from '../pages/tutorials/python/tutorial/PythonVariables'
 import PythonComments from '../pages/tutorials/python/tutorial/PythonComments'
 import PythonStrings from '../pages/tutorials/python/tutorial/PythonStrings'
+import PythonNumbers from '../pages/tutorials/python/tutorial/PythonNumbers'
 
 export default function PythonCourse() {
     return (
@@ -15,6 +16,7 @@ export default function PythonCourse() {
             <Route path="/course/python/comments" component={PythonComments} />
             <Route path="/course/python/variables" component={PythonVariables} />
             <Route path="/course/python/strings" component={PythonStrings} />
+            <Route path="/course/python/numbers" component={PythonNumbers} />
         </div>
     )
 }

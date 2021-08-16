@@ -6,7 +6,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { CgMenuBoxed } from 'react-icons/cg'
 import NavbarComponent from '../../../../components/Navbar/NavbarComponent';
 
-export default function PythonHelloWorld() {
+export default function PythonIntro() {
     return (
       <>
         <NavbarComponent />
@@ -54,7 +54,8 @@ export default function PythonHelloWorld() {
                     We will be usind an IDE {'(Integrated Development Environment)'} in this course, you can use our own IDE in your browser or install one yourself.
                   </p>
               </li>
-            </div>
+            
+          </div>
             </div>
       </>
     )

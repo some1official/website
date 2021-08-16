@@ -6,7 +6,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { CgMenuBoxed } from 'react-icons/cg'
 import NavbarComponent from '../../../../components/Navbar/NavbarComponent';
 
-export default function PythonHelloWorld() {
+export default function PythonStrings() {
     return (
         <>
         <NavbarComponent />
@@ -23,7 +23,7 @@ export default function PythonHelloWorld() {
                 </button>
                 {' '}
                 <button className="next-buttons-tutorialPython">
-                    <a href="/course/python/comments" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
+                    <a href="/course/python/numbers" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
                 </button>
                 {' '}
                 <button className="menu-buttons-tutorialPython">

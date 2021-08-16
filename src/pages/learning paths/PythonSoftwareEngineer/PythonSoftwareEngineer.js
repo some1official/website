@@ -242,6 +242,7 @@ export default function PythonSoftwareEngineer() {
                     <li>02 - <a className="a-PythonSoftwareEngineer" href="/course/python/comments"> Comments</a></li>
                     <li>03 - <a className="a-PythonSoftwareEngineer" href="/course/python/variables"> Variables</a></li>
                     <li>04 - <a className="a-PythonSoftwareEngineer" href="/course/python/strings"> Strings</a></li>
+                    <li>05 - <a className="a-PythonSoftwareEngineer" href="/course/python/numbers"> Numbers</a></li>
                 </ul>
 
                 <div>

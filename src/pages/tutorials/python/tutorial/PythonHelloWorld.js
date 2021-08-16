@@ -21,7 +21,7 @@ export default function PythonHelloWorld() {
                 <button className="back-buttons-tutorialPython">
                     <a href="/course/python/intro" style={{textDecoration: "inherit"}}><FaArrowLeft style={{position: "relative",top: "2px"}}/> Back</a>
                 </button>
-                {' '}
+                {' '} 
                 <button className="next-buttons-tutorialPython">
                     <a href="/course/python/comments" style={{textDecoration: "inherit"}}>Next <FaArrowRight style={{position: "relative",top: "2px"}}/></a>
                 </button>

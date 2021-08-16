@@ -5,7 +5,7 @@ import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { CgMenuBoxed } from 'react-icons/cg';
 
-export default function PythonHelloWorld() {
+export default function PythonVariables() {
     return (
         <div className="page-tutorialPython">
 
