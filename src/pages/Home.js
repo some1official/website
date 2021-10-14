@@ -257,6 +257,7 @@ const Section = styled.a`
 const Hero = styled.div`
   width: 100%;
   h1 {
+    margin-top: 80px;
     padding-bottom: 0;
     width: 55%;
     font-size: 56px;
@@ -268,6 +269,7 @@ const Hero = styled.div`
       font-size: 25px;
       width: 100%;
       line-height: 2;
+      margin-top: 20px;
     }
   }
   img {
@@ -288,7 +290,7 @@ const Hero = styled.div`
 `;
 
 const Form = styled.div`
-  margin-top: 100px;
+  margin-top: 20px;
   width: 400px;
   @media (max-width: 768px) {
     margin-top: 20px;
