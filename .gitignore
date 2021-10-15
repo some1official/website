@@ -13,6 +13,8 @@
 
 # configs
 /src/configs
+/src/configs/firebase-config.js
+/src/configs/authMethods.js
 
 # misc
 .DS_Store
