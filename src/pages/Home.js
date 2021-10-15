@@ -1,8 +1,15 @@
 import styled from "styled-components";
 import NavbarComponent from "../components/Navbar/NavbarComponent";
 import ReactTypingEffect from "react-typing-effect";
+import { GitHubProvider, GoogleProvider } from "../configs/authMethods";
+import socialMediaAuth from "../auth/auth";
 
 const Home = (props) => {
+  const handleOnClick = (provider) => {
+    const res = socialMediaAuth(provider);
+    console.log(res);
+  };
+
   return (
     <Container>
       <NavbarComponent />
@@ -39,11 +46,11 @@ const Home = (props) => {
           <img src="/images/coding.png" alt="" />
         </Hero>
         <Form>
-          <SignInButton>
-            Sign in with Google <img src="/icons/google.png" alt="" />
+          <SignInButton onClick={() => handleOnClick(GoogleProvider)}>
+            Sign in with Google <img src="/icons/google.png" alt="" />{" "}
           </SignInButton>
-          <SignInButton>
-            Sign in with Github <img src="/icons/github.png" alt="" />
+          <SignInButton onClick={() => handleOnClick(GitHubProvider)}>
+            Sign in with Github <img src="/icons/github.png" alt="" />{" "}
           </SignInButton>
         </Form>
       </Section>
