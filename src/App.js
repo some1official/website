@@ -4,6 +4,7 @@ import PrivateRoute from "./auth/PrivateRoute";
 //Pages
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import Learn from "./pages/Learn";
 
 import loginPage from "./auth/loginPage";
 
@@ -21,6 +22,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
+        <Route path="/learn" component={Learn} />
+
         {/*Dashboard*/}
         <Route path="/dashboard">
           {" "}

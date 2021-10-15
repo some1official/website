@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import React from "react";
+import PrivateRoute from "./../../auth/PrivateRoute";
+import firebase from "./../../configs/firebase-config";
 
 // icons
 import { IoHomeSharp } from "react-icons/io5";
@@ -15,7 +17,7 @@ const Navbar = (props) => {
         </Logo>
         <Nav>
           <NavListWrap>
-            <NavList className="active">
+            <NavList>
               <a href="/">
                 <div>
                   <IoHomeSharp size={20} />
@@ -25,7 +27,7 @@ const Navbar = (props) => {
             </NavList>
 
             <NavList>
-              <a>
+              <a href="/learn">
                 <div>
                   <FiBookOpen size={20} />
                 </div>
@@ -57,11 +59,17 @@ const Navbar = (props) => {
             </NavList>
 
             <User>
-              <a>
-                <img src="/icons/navbar/user.svg" alt />
-                <span>Me</span>
-                <img src="/icons/navbar/down-icon.svg" alt="" />
-              </a>
+              {PrivateRoute ? (
+                <a>
+                  <img src="/icons/navbar/user.svg" alt />
+                  <span>Me</span>
+                  <img src="/icons/navbar/down-icon.svg" alt="" />
+                </a>
+              ) : (
+                <a>
+                  <span>No</span>
+                </a>
+              )}
 
               <SignOut>
                 <a>Sign Out</a>
