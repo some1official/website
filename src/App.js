@@ -8,11 +8,15 @@ import Learn from "./pages/Learn";
 
 import loginPage from "./auth/loginPage";
 
-//PythonTutorials
+import PythonSoftwareEngineer from "./pages/learning paths/PythonSoftwareEngineer";
 
-import PythonSoftwareEngineer from "./pages/learning paths/PythonSoftwareEngineer/PythonSoftwareEngineer";
+// [ Routes ]
+// - Courses
+import PythonCourseRoute from "./routes/courses/PythonCourseRoute";
+import MetasploitCourseRoute from "./routes/courses/MetasploitCourseRoute";
 
-import PythonCourseRoute from "./routes/PythonCourseRoute";
+// - Learning Paths
+import LearningPaths from "./routes/LearningPaths";
 
 import Timnik from "./profiles/timnik/Timnik";
 
@@ -30,16 +34,17 @@ function App() {
           {PrivateRoute ? <Dashboard /> : <Redirect to="/login" />}{" "}
         </Route>
 
-        {/* Python Tutorial */}
-        <Route
-          path="/learning-path/python-software-engineer"
-          component={PythonSoftwareEngineer}
-        />
         <Route path="/login">
           {" "}
           {PrivateRoute ? <Redirect to="/dashboard" /> : <loginPage />}{" "}
         </Route>
 
+        <Route
+          path="/learning-path/python-software-engineer"
+          component={PythonSoftwareEngineer}
+        />
+
+        <MetasploitCourseRoute />
         <PythonCourseRoute />
 
         {/* Profile Pages */}

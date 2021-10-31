@@ -99,7 +99,9 @@ const Home = (props) => {
               <h1>
                 <b>Python</b>
               </h1>
-              <button>Learn</button>
+              <button>
+                <a href="/learning-path/python-software-engineer">Learn</a>
+              </button>
             </CardContainer>
           </Card>
 
@@ -397,6 +399,10 @@ const Card = styled.div`
     &:hover {
       background-color: #015cb2;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   &:hover {

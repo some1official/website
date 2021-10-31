@@ -107,6 +107,7 @@ const Logo = styled.span`
   color: white;
 
   a {
+    color: white;
     text-decoration: none;
     font-size: 30px;
     font-family: Source Code Pro, monospace;

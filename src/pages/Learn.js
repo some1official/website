@@ -33,7 +33,9 @@ const Home = (props) => {
                 Learn the fundamentals <br /> by creating projects.
               </p>
 
-              <button>Learn</button>
+              <button>
+                <a href="/learning-path/python-software-engineer">Learn</a>
+              </button>
             </CardContainer>
           </Card>
 
@@ -101,7 +103,9 @@ const Home = (props) => {
             <img src="/icons/webexploitation.png" alt="" />
             <CardContainer>
               <h1>
-                <b>Web Exploitation</b>
+                <b>
+                  Web Exploitation <br /> Basics
+                </b>
               </h1>
               <p>
                 Learn the tools & the methods <br /> used to exploit web
@@ -221,6 +225,10 @@ const Card = styled.div`
     font-weight: 600;
     font-size: 16px;
     padding: 2px 10px;
+
+    a {
+      text-decoration: none;
+    }
 
     &:hover {
       background-color: #015cb2;
